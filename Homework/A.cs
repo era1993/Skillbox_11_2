@@ -8,17 +8,16 @@ namespace Homework
 {
     interface I1
     {
-        public void M();
+        void M();
     }
 
     interface I2
     {
-        public void M();
+        void M();
     }
 
     public class A : I1, I2
     {
-        //public void M() { Console.WriteLine("A.M()"); } 
         void I1.M() { Console.WriteLine("A.I1.M()"); }
         void I2.M() { Console.WriteLine("A.I2.M()"); }
     }
